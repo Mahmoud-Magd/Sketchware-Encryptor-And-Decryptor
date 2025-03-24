@@ -63,7 +63,8 @@ import android.os.storage.StorageManager;
 import android.provider.DocumentsContract;
 import java.nio.charset.StandardCharsets;
 // for openMTManager();
-import androidx.core.content.FileProvider;
+import androidx.core.content.FileProvider;
+
 
 public class DecryptEncryptActivity extends AppCompatActivity {
 private Stack<String> undoStack = new Stack<>();
@@ -1285,7 +1286,8 @@ highlighter = new TextHighlighter (tv_result, vscroll1, hscroll1);
 						
 						
 						
-					}
+					}
+
 					@Override
 					protected String doInBackground(String... _params) {
 						
@@ -1296,9 +1298,11 @@ highlighter = new TextHighlighter (tv_result, vscroll1, hscroll1);
 						
 						
 						
-					}
+					}
+
 					@Override
-					protected void onPostExecute(String _result) {
+					protected void onPostExecute(String _result) {
+
 						
 						
 						
@@ -1535,7 +1539,8 @@ highlighter = new TextHighlighter (tv_result, vscroll1, hscroll1);
 				
 				
 				
-			}
+			}
+
 			@Override
 			protected SpannableStringBuilder doInBackground(String... _params) {
 				
@@ -1545,9 +1550,11 @@ highlighter = new TextHighlighter (tv_result, vscroll1, hscroll1);
 				
 				
 				
-			}
+			}
+
 			@Override
-			protected void onPostExecute(SpannableStringBuilder _result) {
+			protected void onPostExecute(SpannableStringBuilder _result) {
+
 				
 				
 				
@@ -1733,7 +1740,8 @@ highlighter = new TextHighlighter (tv_result, vscroll1, hscroll1);
 				
 				
 				
-			}
+			}
+
 			@Override
 			protected String doInBackground(String... _params) {
 				
@@ -1744,9 +1752,11 @@ highlighter = new TextHighlighter (tv_result, vscroll1, hscroll1);
 				
 				
 				
-			}
+			}
+
 			@Override
-			protected void onPostExecute(String _result) {
+			protected void onPostExecute(String _result) {
+
 				
 				
 				
@@ -1889,4 +1899,4 @@ highlighter = new TextHighlighter (tv_result, vscroll1, hscroll1);
 	
 	
 	
-}
+}
