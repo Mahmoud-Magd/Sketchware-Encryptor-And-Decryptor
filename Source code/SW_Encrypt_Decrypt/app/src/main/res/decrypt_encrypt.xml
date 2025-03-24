@@ -1,0 +1,594 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:id="@+id/RL_MAIN"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/LAYER_1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/l_decrypt"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview36"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="4dp"
+					android:text="Does it lag\?"
+					android:textSize="12sp"
+					android:textColor="#2196F3" />
+				<TextView
+					android:id="@+id/textview25"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="4dp"
+					android:text="FileName"
+					android:textSize="12sp"
+					android:textColor="#000000" />
+				<HorizontalScrollView
+					android:id="@+id/hscroll1"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1">
+					<ScrollView
+						android:id="@+id/vscroll1"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:padding="8dp">
+						<LinearLayout
+							android:id="@+id/linear17"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:orientation="vertical">
+							<TextView
+								android:id="@+id/tv_result"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:background="#D7CCC8"
+								android:text="No decryption result yet!"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+						</LinearLayout>
+					</ScrollView>
+				</HorizontalScrollView>
+				<LinearLayout
+					android:id="@+id/linear18"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right|center_vertical"
+					android:orientation="horizontal">
+					<Button
+						android:id="@+id/b1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Open MT Manager"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+					<LinearLayout
+						android:id="@+id/linear29"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:orientation="horizontal"
+						android:layout_weight="1" />
+					<Button
+						android:id="@+id/b_show_hide_write"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Show Controls"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_gravity="right" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear12"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="#E0E0E0"
+					android:orientation="vertical"
+					android:visibility="gone">
+					<HorizontalScrollView
+						android:id="@+id/hscroll4"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<LinearLayout
+							android:id="@+id/linear19"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:paddingLeft="8dp"
+							android:paddingRight="8dp"
+							android:gravity="center_vertical"
+							android:orientation="horizontal">
+							<Button
+								android:id="@+id/button6"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Open &amp; decrypt file"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview34"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="||| |||"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button1"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Open Editor"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview31"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="||| |||"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button14"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Undo"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button15"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Redo"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button16"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Original"
+								android:textSize="12sp"
+								android:textColor="#000000"
+								android:layout_gravity="right" />
+							<TextView
+								android:id="@+id/textview28"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="||| |||"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button2"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Copy"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview32"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="||| |||"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button17"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Write file"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview29"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="||| |||"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button18"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Search"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+						</LinearLayout>
+					</HorizontalScrollView>
+					<LinearLayout
+						android:id="@+id/linear26"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/linear13"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal"
+							android:layout_weight="1">
+							<TextView
+								android:id="@+id/textview22"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="4dp"
+								android:text="Decrypt"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<Switch
+								android:id="@+id/switch1"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview21"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="4dp"
+								android:text="Encrypt"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/linear16"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal"
+							android:layout_weight="1">
+							<TextView
+								android:id="@+id/textview23"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="4dp"
+								android:text="Spannable"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<Switch
+								android:id="@+id/switch2"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview24"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="4dp"
+								android:text="Text only"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear23"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:background="#9E9E9E"
+						android:orientation="vertical"
+						android:visibility="gone">
+						<LinearLayout
+							android:id="@+id/linear22"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal">
+							<Button
+								android:id="@+id/button21"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Previous"
+								android:textSize="10sp"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button22"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Next"
+								android:textSize="10sp"
+								android:textColor="#000000" />
+							<LinearLayout
+								android:id="@+id/linear24"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="center_vertical"
+								android:orientation="horizontal"
+								android:layout_weight="1">
+								<TextView
+									android:id="@+id/textview35"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="1/1"
+									android:textSize="12sp"
+									android:textColor="#000000" />
+							</LinearLayout>
+							<TextView
+								android:id="@+id/textview33"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Results: 0"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+							<Button
+								android:id="@+id/button19"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Search"
+								android:textSize="12sp"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/linear27"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal">
+							<CheckBox
+								android:id="@+id/checkbox5"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="4dp"
+								android:gravity="center_vertical"
+								android:text="Live"
+								android:textSize="10sp"
+								android:textColor="#000000" />
+							<HorizontalScrollView
+								android:id="@+id/hscroll5"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight="1">
+								<LinearLayout
+									android:id="@+id/linear28"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal">
+									<EditText
+										android:id="@+id/edittext3"
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:padding="8dp"
+										android:textSize="12sp"
+										android:textColor="#000000"
+										android:hint="Search ..."
+										android:textColorHint="#F5F5F5"
+										android:fillViewport="true" />
+								</LinearLayout>
+							</HorizontalScrollView>
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/linear25"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="horizontal">
+							<CheckBox
+								android:id="@+id/checkbox1"
+								android:layout_width="100dp"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_vertical"
+								android:text="Case sensitive"
+								android:textSize="10sp"
+								android:textColor="#000000"
+								android:layout_weight="1" />
+							<CheckBox
+								android:id="@+id/checkbox2"
+								android:layout_width="100dp"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_vertical"
+								android:text="Full words only"
+								android:textSize="10sp"
+								android:textColor="#000000"
+								android:layout_weight="1" />
+							<CheckBox
+								android:id="@+id/checkbox3"
+								android:layout_width="100dp"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:gravity="center_vertical"
+								android:text="Regex\n(coming soon)"
+								android:textSize="12sp"
+								android:textColor="#000000"
+								android:enabled="false"
+								android:alpha="0.5"
+								android:layout_weight="1"
+								android:visibility="gone" />
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/linear20"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:background="#757575"
+						android:orientation="vertical"
+						android:visibility="gone">
+						<HorizontalScrollView
+							android:id="@+id/hscroll2"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+							<EditText
+								android:id="@+id/edittext2"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:textSize="12sp"
+								android:textColor="#000000"
+								android:hint="file path ..."
+								android:textColorHint="#EEEEEE" />
+						</HorizontalScrollView>
+						<Button
+							android:id="@+id/button10"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="Write file"
+							android:textSize="12sp"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview20"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="Result of writing!"
+							android:textSize="12sp"
+							android:textColor="#000000" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/l_encrypt"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Encrypt to .."
+						android:textSize="12sp"
+						android:textColor="#000000" />
+					<HorizontalScrollView
+						android:id="@+id/hscroll3"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<EditText
+							android:id="@+id/edittext1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:textSize="12sp"
+							android:textColor="#000000"
+							android:hint="file path .."
+							android:textColorHint="#607D8B" />
+					</HorizontalScrollView>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear7"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview7"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Choose a file to encrypt"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+					<Button
+						android:id="@+id/button5"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="8dp"
+						android:padding="8dp"
+						android:text="Encrypt file"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview27"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="OR"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:layout_gravity="center_horizontal" />
+					<Button
+						android:id="@+id/button11"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Encrypt The Decrypted String"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear8"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview8"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Result:"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview9"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Can't encrypt! No file choosen yet"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/LAYER_2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#9E9E9E"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical"
+			android:visibility="gone">
+			<ProgressBar
+				android:id="@+id/progressbar1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:indeterminate="false"
+				style="?android:progressBarStyle" />
+			<TextView
+				android:id="@+id/textview26"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Decrypting ..."
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>
