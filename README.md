@@ -7,7 +7,7 @@ This app helps you manipulate ALL Sketchware projects data manually!!
 
 
 
-WARNINGS!!
+### WARNINGS!!
 
 * The encrypted FILES at
 
@@ -33,7 +33,7 @@ But for complex edits or for large files or if the app lags for any reason, you 
 
 
 
-BENEFITS
+### BENEFITS
 
 * Change pages names & order!
 
@@ -60,7 +60,7 @@ Basically you can manually modify anything in the project, if you know what you'
 
 
 
-DOES IT LAG?
+### DOES IT LAG?
 
 You should save the file and use an external editor!
 
