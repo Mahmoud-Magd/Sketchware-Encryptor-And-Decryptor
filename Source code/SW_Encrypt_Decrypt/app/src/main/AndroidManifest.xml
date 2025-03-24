@@ -45,7 +45,8 @@
 			android:screenOrientation="portrait" />
 		<uses-library
 			android:name="org.apache.http.legacy"
-			android:required="false" />
+			android:required="false" />
+
 
 
 
@@ -66,4 +67,4 @@
         
         
 	</application>
-</manifest>
+</manifest>
