@@ -53,6 +53,8 @@ BENEFITS
 
 and many more!!
 
+Basically you can manually modify anything in the project, if you know what you're doing!
+
 
 
 
@@ -61,6 +63,10 @@ and many more!!
 DOES IT LAG?
 
 You should save the file and use an external editor!
+
+Cuz if it lags, then the data is too big to be handled in the temporary memory.
+
+This app was mainly designed just to decrypt and encrypt sketchware project files, it still can't perform complex editor functions!
 
 The ideal work path for now is:
 → Decrypt & save file here
